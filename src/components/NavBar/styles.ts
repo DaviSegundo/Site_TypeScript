@@ -13,7 +13,17 @@ export const Container = styled.div`
 `;
 
 export const Page1 = styled.button <buttonprops>`
-    margin-right: 5px;
+    color: var(--white);
+    margin-right: 30px;
     padding: 5px;
-    background-color: ${({active})=>active?'red':'green'};
+    background-color: transparent;
+    border-width: 0;
+    font-size: 15px;
+    /* background-color: ${({active})=>active?'red':'green'}; */
+
+`;
+
+export const Select = styled.div`
+    margin-top: 13px;
+    border-bottom: 2px solid #E4E4E4;
 `;
