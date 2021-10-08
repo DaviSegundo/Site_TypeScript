@@ -5,13 +5,6 @@ interface buttonprops {
 }
 
 export const Container = styled.div`
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: var(--black);
-    justify-content: center;
-    position: sticky;
-    top: 0;
 `;
 
 export const Page1 = styled.button <buttonprops>`
@@ -28,4 +21,29 @@ export const Page1 = styled.button <buttonprops>`
 export const Select = styled.div`
     margin-top: 13px;
     border-bottom: 2px solid #E4E4E4;
+`;
+
+export const Logo = styled.button`
+    width: 70px;
+    font-size: 30px;
+    color: white;
+    border-width: 0px;
+    background-color: transparent;
+`;
+
+export const Logo2 = styled.div`
+    width: 70px;
+    background-color: black;
+`;
+
+export const Geral = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
 `;

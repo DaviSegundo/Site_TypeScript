@@ -1,19 +1,21 @@
 import React from 'react';
-import { Infos, Skill, Image, DiagonalContainer, DiagonalText } from './styles';
+import { Infos, Skill, DiagonalContainer, DiagonalText } from './styles';
+import { IconChoice } from '../../utils/IconChoice'
 
 interface Props {
     proficiency : string;
     skill : string;
+    icon : string;
 }
 
-export function SkillCard({proficiency, skill}:Props){
+export function SkillCard({proficiency, skill, icon}:Props){
     return (
         <DiagonalContainer>
             <DiagonalText>
                     {proficiency}
             </DiagonalText>
             <Infos>
-                <Image src={require('../../assets/python.svg').default} width={100} height={100}/>
+                <IconChoice icon={icon} color="white" size={100}/>
                 <Skill>
                     {skill}
                 </Skill>

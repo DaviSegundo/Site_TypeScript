@@ -6,6 +6,7 @@ export const Infos = styled.div`
     height: 100%;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
 `;
 
 export const Skill = styled.h2`
@@ -15,11 +16,6 @@ export const Skill = styled.h2`
     color: white;
 `;
 
-export const Image = styled.img`
-    align-self: center;
-    margin-top: 50px;
-`;
-
 export const DiagonalContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -27,7 +23,7 @@ export const DiagonalContainer = styled.div`
     height: 250px;
     background-color: #1c2533;
     overflow: hidden;
-    margin: 5px 5px;
+    margin: 10px 10px;
     border-radius: 10px;
     z-index: -1;
     box-shadow: 0px 3px 6px #00000029;
