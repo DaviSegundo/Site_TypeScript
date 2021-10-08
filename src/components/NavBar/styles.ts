@@ -10,6 +10,8 @@ export const Container = styled.div`
     height: 50px;
     background-color: var(--black);
     justify-content: center;
+    position: sticky;
+    top: 0;
 `;
 
 export const Page1 = styled.button <buttonprops>`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Infos, Proficiency, Skill, Image } from './styles';
+import { Infos, Skill, Image, DiagonalContainer, DiagonalText } from './styles';
 
 interface Props {
     proficiency : string;
@@ -8,16 +8,16 @@ interface Props {
 
 export function SkillCard({proficiency, skill}:Props){
     return (
-        <Container>
+        <DiagonalContainer>
+            <DiagonalText>
+                    {proficiency}
+            </DiagonalText>
             <Infos>
-                <Proficiency>
-                    Proficiency: {proficiency}
-                </Proficiency>
-                <Image src={'https://static.cloud-boxloja.com/lojas/wyfyg/produtos/cf02b27f-ab1b-4a50-ad17-4aa4e0368a94.jpg'} width={100} height={100}/>
+                <Image src={require('../../assets/python.svg').default} width={100} height={100}/>
                 <Skill>
                     {skill}
                 </Skill>
             </Infos>
-        </Container>
+        </DiagonalContainer>
     );
 }
